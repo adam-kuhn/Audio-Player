@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 
-import generic from './generic'
+import music from './music'
 
 export default combineReducers({
-  generic
+  music
 })
