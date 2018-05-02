@@ -1,7 +1,11 @@
-export const EXAMPLE = 'EXAMPLE'
+export const SELECT_SONG = 'SELECT_SONG'
 
-export const example = () => {
+export const selectSong = (title, description, file) => {
+  console.log(title, description, file)
   return {
-    type: EXAMPLE
+    type: SELECT_SONG,
+    title,
+    description,
+    file
   }
 }
