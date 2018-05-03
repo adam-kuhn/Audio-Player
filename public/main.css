@@ -1,8 +1,21 @@
 body {
   background-color: rgb(177, 177, 218);
 }
+
+  .jp-buffer-bar {
+  height: 2.3rem;
+  width: 100%;
+   /* position: absolute;  */
+ } 
+
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
   background-color: #71a6fc;
   height: 5%;
   position: absolute;
 }
+
+/* .jp-progress {
+  background-color: #71a6fc;
+  height: 3rem;
+  position: relative;
+} */

@@ -7,7 +7,7 @@ import JPlayer, {initializeOptions, actions, Gui, SeekBar, BufferBar,
 
 const defaultOptions = {
   id: 'AudioPlayer',
-  bufferColour: 'orange',
+  // bufferColour: 'orange',
   smoothPlayBar: true
   // autoplay: true
 }
@@ -41,8 +41,10 @@ class Player extends React.Component {
                 <SeekBar>
                   <PlayBar />
                   <BufferBar />
-                  <CurrentTime />
-                  <Duration />
+                  <div className='time'>
+                    <CurrentTime />
+                    <Duration />
+                  </div>
                 </SeekBar>
               </div>
             </div>
