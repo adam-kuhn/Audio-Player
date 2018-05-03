@@ -40,6 +40,9 @@ class Player extends React.Component {
             <button type='button' onClick={this.skipAhead}>
               <i className="fa fa-fast-forward"></i>
             </button>
+            <div className="jp-title-container">
+              <Title />
+            </div>
             <div className="jp-progress">
               <div className="jp-progress">
                 <SeekBar>
@@ -51,9 +54,6 @@ class Player extends React.Component {
                   </div>
                 </SeekBar>
               </div>
-            </div>
-            <div className="jp-title-container">
-              <Title />
             </div>
           </div>
           <BrowserUnsupported />
