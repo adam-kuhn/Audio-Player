@@ -4,17 +4,16 @@ import JPlayer, {actions, initializeOptions, Gui, SeekBar, BufferBar,
   Poster, Audio, Title, Mute, Play, PlayBar,
   VolumeBar, Duration, CurrentTime, BrowserUnsupported
 } from 'react-jplayer'
-
+import winston from '../../exercise/winston.mp3'
 const defaultOptions = {
   id: 'AudioPlayer',
   keyEnabled: true,
   verticalVolume: true,
   media: {
-    title: 'Bubble',
-    artist: 'Miaow',
+    title: 'Winston Tastes Good Like A Cigarette Should Jingle',
+    // artist: 'Miaow',
     sources: {
-      m4a: 'http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a',
-      oga: 'http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg'
+      mp3: winston
     },
     free: true
   }
