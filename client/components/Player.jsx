@@ -5,22 +5,14 @@ import JPlayer, {initializeOptions, actions, Gui, SeekBar, BufferBar,
   VolumeBar, Duration, CurrentTime, BrowserUnsupported
 } from 'react-jplayer'
 
-// import winston from '/music/winston.mp3'
-
 const defaultOptions = {
-  id: 'AudioPlayer'
-  // keyEnabled: true,
-  // verticalVolume: true,
-  // media: {
-  //   title: 'Winston Tastes Good Like A Cigarette Should Jingle',
-  //   // artist: 'Miaow',
-  //   sources: {
-  //     mp3: '/music/winston.mp3'
-  //   },
-  //   free: true
-  // }
+  id: 'AudioPlayer',
+  // bufferColour: 'orange',
+  smoothPlayBar: true
+  // autoplay: true
 }
 initializeOptions(defaultOptions)
+
 class Player extends React.Component {
   constructor () {
     super()
@@ -45,12 +37,16 @@ class Player extends React.Component {
             <Play><i className="fa">{/* Icon set in css */}Play</i></Play>
             <button type='button' onClick={this.skipAhead}>FFW</button>
             <div className="jp-progress">
-              <SeekBar>
-                <BufferBar />
-                <PlayBar />
-                <CurrentTime />
-                <Duration />
-              </SeekBar>
+              <div className="jp-progress">
+                <SeekBar>
+                  <PlayBar />
+                  <BufferBar />
+                  <CurrentTime />
+                  <div className="duration">
+                    <Duration />
+                  </div>
+                </SeekBar>
+              </div>
             </div>
             <div className="jp-volume-container">
               <Mute>
