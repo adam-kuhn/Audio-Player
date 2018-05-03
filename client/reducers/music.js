@@ -1,6 +1,10 @@
 import {SELECT_SONG} from '../actions'
 
-const initialState = {}
+const initialState = {
+  title: '',
+  description: '',
+  file: ''
+}
 
 function music (state = initialState, action) {
   switch (action.type) {
