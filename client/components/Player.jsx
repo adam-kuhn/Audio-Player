@@ -6,7 +6,10 @@ import JPlayer, {initializeOptions, actions, Gui, SeekBar, BufferBar,
 } from 'react-jplayer'
 
 const defaultOptions = {
-  id: 'AudioPlayer'
+  id: 'AudioPlayer',
+  bufferColour: 'orange',
+  smoothPlayBar: true
+  // autoplay: true
 }
 initializeOptions(defaultOptions)
 
@@ -34,12 +37,14 @@ class Player extends React.Component {
             <Play><i className="fa">{/* Icon set in css */}Play</i></Play>
             <button type='button' onClick={this.skipAhead}>FFW</button>
             <div className="jp-progress">
-              <SeekBar>
-                <BufferBar />
-                <PlayBar />
-                <CurrentTime />
-                <Duration />
-              </SeekBar>
+              <div className="jp-progress">
+                <SeekBar>
+                  <PlayBar />
+                  <BufferBar />
+                  <CurrentTime />
+                  <Duration />
+                </SeekBar>
+              </div>
             </div>
             <div className="jp-volume-container">
               <Mute>
