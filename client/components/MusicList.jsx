@@ -2,6 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {withRouter} from 'react-router'
+import {actions} from 'react-jplayer'
 
 import music from '../../data.json'
 import {selectSong} from '../actions'
@@ -16,8 +17,14 @@ class MusicList extends React.Component {
     const title = evt.target.getAttribute('data-title')
     const description = evt.target.getAttribute('data-description')
     const file = evt.target.getAttribute('data-file')
-
+    const media = {
+      title,
+      sources: {
+        mp3: `/music/${file}`
+      }
+    }
     this.props.dispatch(selectSong(title, description, file))
+    this.props.dispatch(actions.setMedia('AudioPlayer', media))
   }
 
   render () {
