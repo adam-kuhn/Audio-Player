@@ -25,6 +25,7 @@ class MusicList extends React.Component {
     }
     this.props.dispatch(selectSong(title, description, file))
     this.props.dispatch(actions.setMedia('AudioPlayer', media))
+    this.props.dispatch(actions.play('AudioPlayer'))
   }
 
   render () {
