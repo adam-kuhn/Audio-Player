@@ -1,15 +1,13 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import JPlayer, {initializeOptions, actions, Gui, SeekBar, BufferBar,
-  Audio, Title, Mute, Play, PlayBar,
-  VolumeBar, Duration, CurrentTime, BrowserUnsupported
+  Audio, Title, Play, PlayBar,
+  Duration, CurrentTime, BrowserUnsupported
 } from 'react-jplayer'
 
 const defaultOptions = {
   id: 'AudioPlayer',
-  // bufferColour: 'orange',
   smoothPlayBar: true
-  // autoplay: true
 }
 initializeOptions(defaultOptions)
 
@@ -27,15 +25,24 @@ class Player extends React.Component {
     const ffw15 = this.props.currentTime + 15
     this.props.dispatch(actions.play('AudioPlayer', ffw15))
   }
+
   render () {
     return (
       <JPlayer id={defaultOptions.id} className="jp-sleek">
         <Audio />
         <Gui>
           <div className="jp-controls jp-icon-controls">
-            <button type='button' onClick={this.skipBack}>RWD</button>
-            <Play><i className="fa">{/* Icon set in css */}Play</i></Play>
-            <button type='button' onClick={this.skipAhead}>FFW</button>
+            <button type='button' onClick={this.skipBack}>
+              <i className="fa fa-fast-backward"></i>
+            </button>
+            <Play>{this.props.paused ? <i className="fa fa-play"></i>
+              : <i className="fa fa-pause"></i>}</Play>
+            <button type='button' onClick={this.skipAhead}>
+              <i className="fa fa-fast-forward"></i>
+            </button>
+            <div className="jp-title-container">
+              <Title />
+            </div>
             <div className="jp-progress">
               <div className="jp-progress">
                 <SeekBar>
@@ -48,19 +55,6 @@ class Player extends React.Component {
                 </SeekBar>
               </div>
             </div>
-            <div className="jp-volume-container">
-              <Mute>
-                <i className="fa">{/* Icon set in css */}Mute</i>
-              </Mute>
-              <div className="jp-volume-slider">
-                <div className="jp-volume-bar-container">
-                  <VolumeBar />
-                </div>
-              </div>
-            </div>
-            <div className="jp-title-container">
-              <Title />
-            </div>
           </div>
           <BrowserUnsupported />
         </Gui>
@@ -71,7 +65,8 @@ class Player extends React.Component {
 
 function mapStateToProps (state) {
   return {
-    currentTime: state.jPlayers.AudioPlayer.currentTime
+    currentTime: state.jPlayers.AudioPlayer.currentTime,
+    paused: state.jPlayers.AudioPlayer.paused
   }
 }
 
