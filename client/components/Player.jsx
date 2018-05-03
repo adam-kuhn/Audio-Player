@@ -41,8 +41,8 @@ class Player extends React.Component {
                 <SeekBar>
                   <PlayBar />
                   <BufferBar />
-                  <div className='time'>
-                    <CurrentTime />
+                  <CurrentTime />
+                  <div className="duration">
                     <Duration />
                   </div>
                 </SeekBar>
