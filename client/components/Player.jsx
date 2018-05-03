@@ -5,22 +5,11 @@ import JPlayer, {initializeOptions, actions, Gui, SeekBar, BufferBar,
   VolumeBar, Duration, CurrentTime, BrowserUnsupported
 } from 'react-jplayer'
 
-// import winston from '/music/winston.mp3'
-
 const defaultOptions = {
   id: 'AudioPlayer'
-  // keyEnabled: true,
-  // verticalVolume: true,
-  // media: {
-  //   title: 'Winston Tastes Good Like A Cigarette Should Jingle',
-  //   // artist: 'Miaow',
-  //   sources: {
-  //     mp3: '/music/winston.mp3'
-  //   },
-  //   free: true
-  // }
 }
 initializeOptions(defaultOptions)
+
 class Player extends React.Component {
   constructor () {
     super()
