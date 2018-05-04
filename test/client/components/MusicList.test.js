@@ -3,7 +3,7 @@ import {render} from 'enzyme'
 import {Provider} from 'react-redux'
 import configureStore from 'redux-mock-store'
 
-import MusicList from '../../client/components/MusicList'
+import MusicList from '../../../client/components/MusicList'
 
 afterEach(jest.resetModules)
 

@@ -1,5 +1,5 @@
-import music from '../../client/reducers/music'
-import {SELECT_SONG} from '../../client/actions'
+import music from '../../../client/reducers/music'
+import {SELECT_SONG} from '../../../client/actions'
 
 const initialState = {
   title: '',
