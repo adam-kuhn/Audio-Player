@@ -46,7 +46,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 1rem 4rem 0 0;
+  margin: 3rem 4rem 0 0;
 }
 .skip {
   border-radius: 2rem;
