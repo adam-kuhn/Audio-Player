@@ -12,8 +12,10 @@ const App = () => {
       <div>
         <h2>Hemisphere Audio Player</h2>
         <Player />
-        <MusicList />
-        <Details />
+        <div className='body-container'>
+          <MusicList />
+          <Details />
+        </div>
       </div>
     </Router>
 
