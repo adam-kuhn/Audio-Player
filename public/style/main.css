@@ -14,7 +14,8 @@ body {
   padding-bottom: 2.7rem;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 0.3rem;
 }
 
@@ -59,22 +60,16 @@ body {
 }
 
 .jp-progress {
-  width: 31rem;
-  min-width: 18rem;
-  max-width: 31rem;
+  width: 17rem;
+  min-width: 17rem;
+  max-width: 17rem;
   font-size: 1.2rem;
   position: relative;
 }
 
 .body-container {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-}
-
-.details {
-  width: 50%;
-  padding: 1rem;
+  flex-direction: column;
 }
 
 .body {
@@ -124,3 +119,28 @@ body {
   background-color: #8080809c;
 }
 
+@media screen and (min-width: 525px){
+  .jp-progress {
+    width: 31rem;
+    min-width: 18rem;
+    max-width: 31rem;
+}
+
+@media screen and (min-width: 750px){
+  .jp-controls {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
+  .body-container {
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row
+  }
+
+  .details {
+    width: 50%;
+    padding: 1rem;
+  }
+}
