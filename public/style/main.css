@@ -5,28 +5,25 @@ body {
 
 .jp-seek-bar {
   background-color: #00000047;
-  height: 10px;
-  border-radius: 5px;
-
+  height: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 .jp-controls {
   background-color: #8080803d;
-  padding-bottom: 25px;
+  padding-bottom: 2.7rem;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  border-radius: 9px;
-  margin-bottom: 4px;
+  margin-bottom: 0.3rem;
 }
 
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
   background-color: #393b3e70;
-  height: 10px;
+  height: 0.7rem;
   position: relative;
   width: 100%;
-  border-radius: 5px;
-
+  border-radius: 0.5rem;
 }
 
 .jp-buffer-bar {
@@ -62,10 +59,10 @@ body {
 }
 
 .jp-progress {
-  width: 500px;
-  min-width: 180px;
-  max-width: 500px;
-  font-size: 20px;
+  width: 31rem;
+  min-width: 18rem;
+  max-width: 31rem;
+  font-size: 1.2rem;
   position: relative;
 }
 
@@ -82,11 +79,11 @@ body {
 
 .music-list {
   padding: 1rem;
-  border-width: 2px;
+  border-width: 0.17rem;
   border-style: solid;
   border-color: #655f5f4a;
-  border-radius: 5px;
-  margin: 3px;
+  border-radius: 0.3rem;
+  margin: 0.2rem;
 }
 
 .header {
@@ -98,7 +95,7 @@ body {
 }
 
 .details .header {
- padding-bottom: 20px;
+ padding-bottom: 1.3rem;
 }
 .main-header {
   border-bottom-style: solid;
@@ -111,7 +108,7 @@ body {
 }
 
 .sort button {
-  margin-left: 8px;
+  margin-left: 0.7rem;
 }
 
 .song {
