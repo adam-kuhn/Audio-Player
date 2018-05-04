@@ -32,24 +32,26 @@ class Player extends React.Component {
         <Audio />
         <Gui>
           <div className="jp-controls jp-icon-controls">
-            <button type='button' onClick={this.skipBack}>
-              <i className="fa fa-fast-backward"></i>
-            </button>
-            <Play>{this.props.paused ? <i className="fa fa-play"></i>
-              : <i className="fa fa-pause"></i>}</Play>
-            <button type='button' onClick={this.skipAhead}>
-              <i className="fa fa-fast-forward"></i>
-            </button>
-            <div className="jp-title-container">
-              <Title />
+            <div className="controls">
+              <button className="skip" type='button' onClick={this.skipBack}>
+                <i className="fa fa-fast-backward fa-2x"></i>
+              </button>
+              <Play> {this.props.paused ? <i className="fa fa-play fa-4x"></i>
+                : <i className="fa fa-pause fa-4x"></i>}</Play>
+              <button className ="skip" type='button' onClick={this.skipAhead}>
+                <i className="fa fa-fast-forward fa-2x"></i>
+              </button>
             </div>
-            <div className="jp-progress">
+            <div className="bar-container">
+              <div className="jp-title-container">
+                <Title />
+              </div>
               <div className="jp-progress">
                 <SeekBar>
                   <PlayBar />
                   <BufferBar />
-                  <CurrentTime />
-                  <div className="duration">
+                  <div className="time">
+                    <CurrentTime />
                     <Duration />
                   </div>
                 </SeekBar>
