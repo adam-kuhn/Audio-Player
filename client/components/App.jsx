@@ -7,14 +7,15 @@ import Player from './Player'
 
 const App = () => {
   return (
+
     <Router>
       <div>
-        <h2>React and Redux development is ready to GOOOO!</h2>
         <Player />
         <MusicList />
         <Details />
       </div>
     </Router>
+
   )
 }
 

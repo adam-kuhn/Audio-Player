@@ -1,19 +1,41 @@
+/* .jp-controls {
+  background-color: #ECECEC;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
-  .jp-buffer-bar {
-  height: 2.3rem;
-  width: 80%;
- } 
+.jp-seek-bar {
+  background-color: #00000047;
+  height: 10px;
+}
+
+.jp-controls {
+  background-color: #8080803d;
+  padding-bottom: 25px;
+}
 
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
-  background-color: #71a6fc;
-  height: 5%;
-  position: absolute;
+  background-color: #393b3e70;
+  height: 10px;
+  position: relative;
+  width: 100%;
 }
 
-.duration {
-  padding-left: 80%;
-}
+.jp-buffer-bar {
+  display: none;
+  } 
 
+.time {
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.controls {
+
+}
 .skip {
   border-radius: 2rem;
   padding: 0.5rem;
@@ -22,4 +44,14 @@
 .jp-play {
   border-radius: 3rem;
   padding: 1rem;
+}
+
+
+
+.jp-progress {
+  width: 500px;
+  min-width: 180px;
+  max-width: 500px;
+  font-size: 20px;
+  position: relative;
 }
