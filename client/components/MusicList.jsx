@@ -69,7 +69,7 @@ class MusicList extends React.Component {
     }
     return (
       <div className='music-list'>
-        <div className='list-header'>
+        <div className='header'>
           <h2>Available Songs</h2>
           <div className='sort'>
             <p>Sort by:</p>

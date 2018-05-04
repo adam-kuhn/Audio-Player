@@ -7,10 +7,9 @@ import Player from './Player'
 
 const App = () => {
   return (
-
     <Router>
       <div>
-        <h2>Hemisphere Audio Player</h2>
+        <h2 className='main-header'>Hemisphere Audio Player</h2>
         <Player />
         <div className='body-container'>
           <MusicList />
