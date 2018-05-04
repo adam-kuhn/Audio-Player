@@ -1,3 +1,7 @@
+body {
+  background-color: #e1e1e152
+}
+
 .jp-seek-bar {
   background-color: #00000047;
   height: 10px;
@@ -11,6 +15,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  border-radius: 9px;
+  margin-bottom: 4px;
 }
 
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
@@ -70,4 +76,53 @@
 
 .details {
   width: 50%;
+  padding: 1rem;
 }
+
+.music-list {
+  padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #655f5f4a;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4rem;
+  border-bottom-style: solid;
+}
+
+.details .header {
+ padding-bottom: 20px;
+}
+.main-header {
+  border-bottom-style: solid;
+  border-color: #0080004a;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort button {
+  margin-left: 8px;
+}
+
+.song {
+  margin: -1rem -0.5rem;
+  padding: 0 0.5rem;
+}
+
+.dark-song {
+  background-color: #e6e5e5;
+}
+
+.song:hover {
+  background-color: #8080809c;
+}
+

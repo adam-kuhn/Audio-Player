@@ -69,18 +69,34 @@ class MusicList extends React.Component {
     }
     return (
       <div className='music-list'>
-        <button type='button' onClick={this.sortList}>Sort</button>
-        <ul>
+        <div className='header'>
+          <h2>Available Songs</h2>
+          <div className='sort'>
+            <p>Sort by:</p>
+            <button type='button' onClick={this.sortList}>Name</button>
+          </div>
+        </div>
+        <div className='list'>
           {this.state.musicList.map((song, idx) => {
-            return (
-              <li key={idx}>
-                <Link to='#' onClick={this.handleClick}
-                  data-title={song.title} data-file={song.file}
-                  data-description={song.description}>{song.title}</Link>
-              </li>
-            )
+            if (idx % 2 === 0) {
+              return (
+                <div className='song dark-song' key={idx}>
+                  <Link to='#' ><h3 onClick={this.handleClick}
+                    data-title={song.title} data-file={song.file}
+                    data-description={song.description}>{song.title}</h3></Link>
+                </div>
+              )
+            } else {
+              return (
+                <div className='song' key={idx}>
+                  <Link to='#' ><h3 onClick={this.handleClick}
+                    data-title={song.title} data-file={song.file}
+                    data-description={song.description}>{song.title}</h3></Link>
+                </div>
+              )
+            }
           })}
-        </ul>
+        </div>
       </div>
     )
   }
