@@ -1,4 +1,4 @@
-const actions = require('../client/actions')
+const actions = require('../../client/actions')
 
 test('selectSong returns an object holding the song info', () => {
   const title = 'song title'

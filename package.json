@@ -7,6 +7,11 @@
     "dev": "nodemon --watch server & webpack --watch",
     "test": "jest --watch --noStackTrace"
   },
+  "jest": {
+    "setupFiles": [
+      "./test/client-setup.js"
+    ]
+  },
   "description": "boilerplate set up for react and redux development",
   "repository": "https://github.com/adam-kuhn/boilerplate.git",
   "author": "adam-kuhn <adam.kuhn20@gmail.com>",
