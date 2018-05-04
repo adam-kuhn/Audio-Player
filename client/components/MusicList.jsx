@@ -76,17 +76,17 @@ class MusicList extends React.Component {
             <button type='button' onClick={this.sortList}>Name</button>
           </div>
         </div>
-        <ul>
+        <div className='list'>
           {this.state.musicList.map((song, idx) => {
             return (
-              <li key={idx}>
-                <Link to='#' onClick={this.handleClick}
+              <div className='song' key={idx}>
+                <Link to='#' ><h3 onClick={this.handleClick}
                   data-title={song.title} data-file={song.file}
-                  data-description={song.description}>{song.title}</Link>
-              </li>
+                  data-description={song.description}>{song.title}</h3></Link>
+              </div>
             )
           })}
-        </ul>
+        </div>
       </div>
     )
   }
