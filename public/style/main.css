@@ -70,6 +70,11 @@
 
 .details {
   width: 50%;
+  padding: 1rem;
+}
+
+.music-list {
+  padding: 1rem;
 }
 
 .list-header {
