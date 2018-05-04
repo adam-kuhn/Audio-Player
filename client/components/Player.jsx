@@ -42,10 +42,10 @@ class Player extends React.Component {
                 <i className="fa fa-fast-forward fa-2x"></i>
               </button>
             </div>
-            <div className="jp-title-container">
-              <Title />
-            </div>
-            <div className="jp-progress">
+            <div className="bar-container">
+              <div className="jp-title-container">
+                <Title />
+              </div>
               <div className="jp-progress">
                 <SeekBar>
                   <PlayBar />

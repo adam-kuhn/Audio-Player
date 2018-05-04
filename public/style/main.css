@@ -9,11 +9,15 @@
 .jp-seek-bar {
   background-color: #00000047;
   height: 10px;
+  border-radius: 5px;
 }
 
 .jp-controls {
   background-color: #8080803d;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
@@ -27,14 +31,23 @@
   display: none;
   } 
 
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .time {
-      display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
 .controls {
-
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 1rem 4rem 0 0;
 }
 .skip {
   border-radius: 2rem;

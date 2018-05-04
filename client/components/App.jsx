@@ -10,6 +10,7 @@ const App = () => {
 
     <Router>
       <div>
+        <h2>Hemisphere Audio Player</h2>
         <Player />
         <MusicList />
         <Details />
