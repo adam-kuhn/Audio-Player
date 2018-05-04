@@ -28,10 +28,10 @@ class Player extends React.Component {
 
   render () {
     return (
-      <JPlayer id={defaultOptions.id} className="jp-sleek">
+      <JPlayer id={defaultOptions.id}>
         <Audio />
         <Gui>
-          <div className="jp-controls jp-icon-controls">
+          <div className="jp-controls">
             <div className="controls">
               <button className="skip" type='button' onClick={this.skipBack}>
                 <i className="fa fa-fast-backward fa-2x"></i>
@@ -43,9 +43,7 @@ class Player extends React.Component {
               </button>
             </div>
             <div className="bar-container">
-              <div className="jp-title-container">
-                <Title />
-              </div>
+              <Title />
               <div className="jp-progress">
                 <SeekBar>
                   <PlayBar />
