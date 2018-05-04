@@ -1,15 +1,8 @@
-/* .jp-controls {
-  background-color: #ECECEC;
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .jp-seek-bar {
   background-color: #00000047;
   height: 10px;
   border-radius: 5px;
+
 }
 
 .jp-controls {
@@ -25,6 +18,8 @@
   height: 10px;
   position: relative;
   width: 100%;
+  border-radius: 5px;
+
 }
 
 .jp-buffer-bar {
