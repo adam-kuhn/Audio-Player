@@ -1,5 +1,4 @@
 export const SELECT_SONG = 'SELECT_SONG'
-export const SORT_SONGS = 'SORT_SONGS'
 
 export const selectSong = (title, description, file) => {
   return {
@@ -7,12 +6,5 @@ export const selectSong = (title, description, file) => {
     title,
     description,
     file
-  }
-}
-
-export const sortSongs = (aToZ) => {
-  return {
-    type: SORT_SONGS,
-    aToZ
   }
 }

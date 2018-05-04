@@ -14,13 +14,3 @@ test('selectSong returns an object holding the song info', () => {
   const actual = actions.selectSong(title, description, file)
   expect(actual).toEqual(expected)
 })
-
-test('sortSongs returns correct action', () => {
-  const aToZ = true
-  const expected = {
-    type: actions.SORT_SONGS,
-    aToZ
-  }
-  const actual = actions.sortSongs(aToZ)
-  expect(actual).toEqual(expected)
-})
