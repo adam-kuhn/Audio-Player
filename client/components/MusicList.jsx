@@ -68,7 +68,7 @@ class MusicList extends React.Component {
       })
     }
     return (
-      <div>
+      <div className='music-list'>
         <button type='button' onClick={this.sortList}>Sort</button>
         <ul>
           {this.state.musicList.map((song, idx) => {
