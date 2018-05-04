@@ -1,5 +1,6 @@
 body {
-  background-color: #e1e1e152
+  background-color: #e1e1e152;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .jp-seek-bar {
