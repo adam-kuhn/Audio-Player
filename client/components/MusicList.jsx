@@ -78,13 +78,23 @@ class MusicList extends React.Component {
         </div>
         <div className='list'>
           {this.state.musicList.map((song, idx) => {
-            return (
-              <div className='song' key={idx}>
-                <Link to='#' ><h3 onClick={this.handleClick}
-                  data-title={song.title} data-file={song.file}
-                  data-description={song.description}>{song.title}</h3></Link>
-              </div>
-            )
+            if (idx % 2 === 0) {
+              return (
+                <div className='song dark-song' key={idx}>
+                  <Link to='#' ><h3 onClick={this.handleClick}
+                    data-title={song.title} data-file={song.file}
+                    data-description={song.description}>{song.title}</h3></Link>
+                </div>
+              )
+            } else {
+              return (
+                <div className='song' key={idx}>
+                  <Link to='#' ><h3 onClick={this.handleClick}
+                    data-title={song.title} data-file={song.file}
+                    data-description={song.description}>{song.title}</h3></Link>
+                </div>
+              )
+            }
           })}
         </div>
       </div>

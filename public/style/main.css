@@ -75,6 +75,10 @@
 
 .music-list {
   padding: 1rem;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #655f5f4a;
+  border-radius: 2px;
 }
 
 .list-header {
@@ -89,7 +93,16 @@
   align-items: center;
 }
 
+.song {
+  margin: -1rem;
+}
+
+.dark-song {
+  background-color: #e6e5e5;
+  margin: -1rem;
+}
+
 .song:hover {
-  background-color: #80808033;
+  background-color: #8080809c;
 }
 

@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 class Details extends React.Component {
   render () {
     return (
-      <div className='details'>
+      <div className='details music-list'>
         <h2>Details:</h2>
         <h3>{this.props.title}</h3>
         <p>{this.props.description}</p>
