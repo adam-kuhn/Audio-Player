@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  border-radius: 9px;
+  margin-bottom: 4px;
 }
 
 .jp-sleek .jp-gui .jp-controls .jp-progress .jp-seek-bar .jp-play-bar {
@@ -78,7 +80,8 @@
   border-width: 2px;
   border-style: solid;
   border-color: #655f5f4a;
-  border-radius: 2px;
+  border-radius: 5px;
+  margin: 3px;
 }
 
 .list-header {
@@ -99,7 +102,6 @@
 
 .dark-song {
   background-color: #e6e5e5;
-  margin: -1rem;
 }
 
 .song:hover {
